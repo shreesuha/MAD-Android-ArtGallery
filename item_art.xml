@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/art_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/art_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/art_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#666666" />
+
+    <ImageView
+        android:id="@+id/favorite_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@drawable/baseline_favorite_border_24"
+        android:contentDescription="Favorite" />
+
+    <ImageView
+        android:id="@+id/add_to_cart_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@drawable/baseline_shopping_cart_24"
+    android:contentDescription="Add to Cart" />
+
+</LinearLayout>

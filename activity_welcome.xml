@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.WelcomeActivity">
+
+    <ImageView
+        android:foreground="@drawable/foreground_design"
+        android:id="@+id/welcomeimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/images"
+        tools:ignore="ContentDescription"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-424dp" />
+
+    <TextView
+        android:id="@+id/welcometxt"
+        android:layout_width="407dp"
+        android:layout_height="44dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Welcome To MS Art Gallery"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/welcomeimg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245"
+        tools:ignore="HardcodedText,MissingConstraints,UnknownId" />
+
+    <TextView
+        android:id="@+id/hitxt"
+        android:layout_width="198dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/hi_explore_it"
+        android:textAlignment="textEnd"
+        android:textColor="#FBFBFB"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.696"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcometxt"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hitxt"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintWidth_percent=".8"
+        android:onClick="register"
+        android:background="@drawable/bg_button_intro"/>
+
+    <TextView
+        android:layout_width="157dp"
+        android:layout_height="21dp"
+        android:onClick="login"
+        android:text="@string/sign_in"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/welcomeimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        app:layout_constraintVertical_bias="0.2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
